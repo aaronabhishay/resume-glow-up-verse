@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const CTASection = () => {
+  const navigate = useNavigate();
   const benefits = [
     "No setup fees or hidden costs",
     "Cancel anytime, no questions asked",
@@ -54,6 +56,7 @@ const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button 
               size="lg"
+              onClick={() => navigate("/job-analysis")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-xl font-bold rounded-2xl shadow-button hover:shadow-glow transition-all duration-300 group animate-glow-pulse"
             >
               Start Free Trial

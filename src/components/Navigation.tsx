@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X, Sparkles, Brain } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
@@ -17,7 +19,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate("/")}>
             <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
               <Sparkles className="w-6 h-6 text-white" />
             </div>
@@ -42,8 +44,19 @@ const Navigation = () => {
             <Button variant="ghost" className="font-medium">
               Sign In
             </Button>
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6">
-              Get Started
+            <Button 
+              variant="outline"
+              onClick={() => navigate("/job-analysis")}
+              className="font-medium"
+            >
+              <Brain className="w-4 h-4 mr-2" />
+              Try Demo
+            </Button>
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6"
+              onClick={() => navigate("/job-analysis")}
+            >
+              Start Analysis
             </Button>
           </div>
 
@@ -74,8 +87,19 @@ const Navigation = () => {
                 <Button variant="ghost" className="justify-start">
                   Sign In
                 </Button>
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
-                  Get Started
+                <Button 
+                  variant="outline"
+                  onClick={() => navigate("/job-analysis")}
+                  className="justify-start"
+                >
+                  <Brain className="w-4 h-4 mr-2" />
+                  Try Demo
+                </Button>
+                <Button 
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold justify-start"
+                  onClick={() => navigate("/job-analysis")}
+                >
+                  Start Analysis
                 </Button>
               </div>
             </div>

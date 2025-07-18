@@ -6,62 +6,61 @@
 
 @layer base {
   :root {
-    /* Core brand colors - Professional blues and purples */
+    /* High-contrast professional theme for better readability */
     --background: 0 0% 100%;
     --foreground: 224 71% 4%;
     
-    /* Primary brand - Deep professional blue */
-    --primary: 221 83% 53%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 221 83% 63%;
+    /* Primary - Deep navy blue for trust and professionalism */
+    --primary: 225 84% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 225 84% 35%;
     
-    /* Secondary - Elegant purple */
-    --secondary: 262 83% 58%;
-    --secondary-foreground: 0 0% 98%;
+    /* Secondary - Rich teal for accent */
+    --secondary: 195 85% 35%;
+    --secondary-foreground: 0 0% 100%;
     
-    /* Accent - Success green for rankings */
-    --accent: 142 71% 45%;
-    --accent-foreground: 0 0% 98%;
+    /* Accent - Success green with better contrast */
+    --accent: 151 65% 35%;
+    --accent-foreground: 0 0% 100%;
     
-    /* Background variations */
-    --background: 0 0% 100%;
-    --background-soft: 220 14% 96%;
-    --background-muted: 220 14% 91%;
-
-    /* Card system */
+    /* Background variations with better separation */
+    --background-soft: 220 20% 98%;
+    --background-muted: 220 15% 94%;
+    
+    /* Card system with stronger contrast */
     --card: 0 0% 100%;
     --card-foreground: 224 71% 4%;
-    --card-glow: 221 83% 53%;
+    --card-glow: 225 84% 25%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 224 71% 4%;
 
-    /* Text variants */
-    --muted: 220 14% 91%;
-    --muted-foreground: 220 9% 46%;
+    /* Text variants with better readability */
+    --muted: 220 15% 89%;
+    --muted-foreground: 220 25% 25%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(262 83% 58%));
-    --gradient-hero: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(262 83% 58%) 50%, hsl(142 71% 45%) 100%);
-    --gradient-glass: linear-gradient(135deg, hsla(0 0% 100% / 0.1), hsla(0 0% 100% / 0.05));
-    --gradient-border: linear-gradient(135deg, hsl(221 83% 53% / 0.2), hsl(262 83% 58% / 0.2));
+    /* Stronger gradients for better visibility */
+    --gradient-primary: linear-gradient(135deg, hsl(225 84% 25%), hsl(195 85% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(225 84% 25%) 0%, hsl(195 85% 35%) 50%, hsl(151 65% 35%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(0 0% 100% / 0.15), hsla(0 0% 100% / 0.08));
+    --gradient-border: linear-gradient(135deg, hsl(225 84% 25% / 0.3), hsl(195 85% 35% / 0.3));
     
-    /* Shadows */
-    --shadow-glow: 0 0 50px hsl(221 83% 53% / 0.15);
-    --shadow-card: 0 8px 32px hsl(220 9% 46% / 0.12);
-    --shadow-button: 0 4px 14px hsl(221 83% 53% / 0.25);
+    /* Enhanced shadows for better depth */
+    --shadow-glow: 0 0 50px hsl(225 84% 25% / 0.2);
+    --shadow-card: 0 10px 40px hsl(220 25% 25% / 0.15);
+    --shadow-button: 0 6px 20px hsl(225 84% 25% / 0.3);
 
-    /* Status colors */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 98%;
-    --success: 142 71% 45%;
-    --success-foreground: 0 0% 98%;
+    /* Status colors with high contrast */
+    --destructive: 0 84% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 45 93% 45%;
+    --warning-foreground: 0 0% 100%;
+    --success: 151 65% 35%;
+    --success-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 221 83% 53%;
+    --border: 220 20% 85%;
+    --input: 220 20% 85%;
+    --ring: 225 84% 25%;
 
     --radius: 0.75rem;
 
@@ -90,36 +89,43 @@
 
     --card: 224 47% 8%;
     --card-foreground: 0 0% 98%;
-    --card-glow: 221 83% 53%;
+    --card-glow: 225 84% 35%;
 
     --popover: 224 47% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 221 83% 63%;
+    /* Brighter primaries for dark mode */
+    --primary: 225 84% 45%;
     --primary-foreground: 224 71% 4%;
-    --primary-glow: 221 83% 73%;
+    --primary-glow: 225 84% 55%;
 
-    --secondary: 262 83% 68%;
+    --secondary: 195 85% 45%;
     --secondary-foreground: 224 71% 4%;
 
-    --muted: 224 47% 12%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 224 47% 16%;
+    --muted-foreground: 220 9% 70%;
 
-    --accent: 142 71% 55%;
+    --accent: 151 65% 45%;
     --accent-foreground: 224 71% 4%;
 
-    --destructive: 0 84% 70%;
+    /* Status colors - enhanced contrast */
+    --destructive: 0 84% 65%;
     --destructive-foreground: 224 71% 4%;
+    --warning: 45 93% 55%;
+    --warning-foreground: 224 71% 4%;
+    --success: 151 65% 45%;
+    --success-foreground: 224 71% 4%;
 
-    --border: 224 47% 16%;
-    --input: 224 47% 16%;
-    --ring: 221 83% 63%;
+    --border: 224 47% 20%;
+    --input: 224 47% 20%;
+    --ring: 225 84% 45%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(221 83% 63%), hsl(262 83% 68%));
-    --gradient-hero: linear-gradient(135deg, hsl(221 83% 63%) 0%, hsl(262 83% 68%) 50%, hsl(142 71% 55%) 100%);
-    --gradient-glass: linear-gradient(135deg, hsla(0 0% 100% / 0.05), hsla(0 0% 100% / 0.02));
-    --shadow-glow: 0 0 50px hsl(221 83% 63% / 0.25);
-    --shadow-card: 0 8px 32px hsl(224 71% 4% / 0.5);
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(225 84% 45%), hsl(195 85% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(225 84% 45%) 0%, hsl(195 85% 45%) 50%, hsl(151 65% 45%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(0 0% 100% / 0.08), hsla(0 0% 100% / 0.04));
+    --shadow-glow: 0 0 60px hsl(225 84% 45% / 0.3);
+    --shadow-card: 0 10px 40px hsl(224 71% 4% / 0.6);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
